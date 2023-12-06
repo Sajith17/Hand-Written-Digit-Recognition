@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataCollection</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+  </head>
+  <body>
+    <div class="number-pad-container">
+      <h2 class="number-pad-heading">Choose a number</h2>
+      <div class="number-pad">
+        <button onclick="handleNumberClick(1)">1</button>
+        <button onclick="handleNumberClick(2)">2</button>
+        <button onclick="handleNumberClick(3)">3</button>
+        <button onclick="handleNumberClick(4)">4</button>
+        <button onclick="handleNumberClick(5)">5</button>
+        <button onclick="handleNumberClick(6)">6</button>
+        <button onclick="handleNumberClick(7)">7</button>
+        <button onclick="handleNumberClick(8)">8</button>
+        <button onclick="handleNumberClick(9)">9</button>
+        <button class="empty"></button>
+        <button onclick="handleNumberClick(0)">0</button>
+        <button class="empty"></button>
+      </div>
+    </div>
+  </body>
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</html>
